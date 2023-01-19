@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },{
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },{
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },
+    {
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    },{
+      "id": 1,
+      "image": "https://assets.ajio.com/cms/AJIO/WEB/19012023-UHP-D-MainBanner-P7-Winterwear-LeeWrnagler-Min50.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
