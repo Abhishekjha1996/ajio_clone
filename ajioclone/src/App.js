@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import SliderCompo from './Components/SliderCompo';
 
 
 
@@ -10,6 +11,7 @@ function App() {
        <Navbar />
        
        <Footer />
+       <SliderCompo />
     </div>
   );
 }
