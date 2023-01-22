@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from "axios"
 import { Container, Grid, GridItem, Image, Text, Button, Select } from '@chakra-ui/react'
 import {NavLink} from "react-router-dom"
@@ -6,18 +6,21 @@ import {NavLink} from "react-router-dom"
 
 const MenPage = () => {
 const [data, setdata] = React.useState([])
+const [val, setval] = useState("asc");
 
 const getdata = () => {
-  return axios.get(`http://localhost:3001/productsmen`)
+  return axios.get(`http://localhost:3001/productsmen?_sort=price&_order=${val}`)
   .then((res) => setdata(res.data));
 
 };
+
+// ?_sort=views&_order=asc/desc
 console.log(data)
 
   React.useEffect(() => {
     getdata()
    
-  },[])
+  },[val])
 
   return (
 
@@ -25,7 +28,7 @@ console.log(data)
 
       <div style={{display: "flex", alignContent: "space-between"}}>
         <div>
-      <Select placeholder='Sort by Price'>
+      <Select placeholder='Sort by Price' onChange={(e) => setval(e.target.value)}>
       <option value='asc'>High To Low</option>
       <option value='desc'>Low to High</option>
       </Select>
@@ -34,21 +37,12 @@ console.log(data)
 
       
       <Select placeholder='Sort by Rating'>
-      <option value='option1'>Option 1</option>
-      <option value='option2'>Option 2</option>
-      <option value='option3'>Option 3</option>
+      <option value='asc'>High Rate to Low</option>
+      <option value='desc'> Low Rate to High</option>
+      
       </Select>
       
-      </div>
-      <div>
-      <Select placeholder='Select option'>
-      <option value='option1'>Option 1</option>
-      <option value='option2'>Option 2</option>
-      <option value='option3'>Option 3</option>
-      </Select>
-
-      </div>
-        
+      </div>       
         
        </div>
 

@@ -9,7 +9,7 @@ import {
     Flex,
     Tag,
     useColorModeValue,
-    Image,
+    Image
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
   
@@ -82,11 +82,11 @@ import {
           </SimpleGrid>
         </Container>
         <hr width="90%" alignItems="center" />
-        <Box h="200px" border="1px solid red">
+        <Box h="150px" >
           <Flex>
-          <Box width="50%" justifyContent="space-between" border="1px solid red">
-            <Box justifyContent="left" width="30%" border="1px solid green"> Payment methods </Box>
-            <Box width="50%" border="1px solid green">
+          <Box width="50%" justifyContent="space-between" >
+            <Box justifyContent="left" width="30%" > Payment methods </Box>
+            <Box width="50%" >
               <Flex justifyContent="space-between" alignItems="center">
                 <Box> <Image src='https://2.imimg.com/data2/PH/AM/MY-1585188/cash-on-delivery-500x500.png' alt='logo' 
                   w="100%" /> </Box>
@@ -101,9 +101,13 @@ import {
               </Flex>
             </Box>
           </Box>
-          <Box width="50%" border="1px solid red" >
-            <Box border="1px solid red" w="30%" marginLeft="70%"  > Secure systems </Box>
-            <Box border="1px solid red" w="30%" marginLeft="70%" >sadasf</Box>
+          <Box width="50%" >
+            <Box  w="20%" marginLeft="70%"  > Secure systems </Box>
+            <Box  w="20%" marginLeft="70%" >
+              <Container>
+              <Image width="40px" src='https://cdn.shopify.com/s/files/1/0013/1655/2764/files/Db-icon-3.png?v=1584103579' />
+              </Container>
+            </Box>
           </Box>
           </Flex>
         </Box>

@@ -15,6 +15,7 @@ import {
     Link,
   } from '@chakra-ui/react';
   import { useState } from 'react';
+  import {NavLink } from "react-router-dom"
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   
   export default function Signup() {
@@ -75,6 +76,8 @@ import {
                 </InputGroup>
               </FormControl>
               <Stack spacing={10} pt={2}>
+                <NavLink to ="/singin">
+
                 <Button
                   loadingText="Submitting"
                   size="lg"
@@ -86,6 +89,7 @@ import {
                   >
                   Sign up
                 </Button>
+                </NavLink>
               </Stack>
               <Stack pt={6}>
                 <Text align={'center'}>

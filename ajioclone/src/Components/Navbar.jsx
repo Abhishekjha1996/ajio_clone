@@ -100,6 +100,9 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
+              <NavLink to="\admin">
+              <Button>ADMIN</Button>
+              </NavLink>
               <NavLink to={"/singin"}>
             <Button
                display={{ base: 'none', md: 'inline-flex' }}
@@ -354,13 +357,13 @@ import {
         label: 'WOMEN',
         children: [
           {
-            label: 'Explore Design Work',
-            subLabel: 'Trending Design to inspire you',
+            label: 'Explore Women Design Work',
+            subLabel: 'Women dress',
             href: '#',
           },
           {
             label: 'New & Noteworthy',
-            subLabel: 'Up-and-coming Designers',
+            subLabel: 'Women dress',
             href: '#',
           },
         ],
@@ -369,13 +372,13 @@ import {
         label: 'KIDS',
         children: [
           {
-            label: 'Explore Design Work',
-            subLabel: 'Trending Design to inspire you',
+            label: 'Kids Dress',
+            subLabel: 'Kids dress',
             href: '#',
           },
           {
-            label: 'New & Noteworthy',
-            subLabel: 'Up-and-coming Designers',
+            label: 'Kids Dress',
+            subLabel: 'Kids dress',
             href: '#',
           },
         ],
