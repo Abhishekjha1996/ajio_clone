@@ -100,7 +100,7 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-              <NavLink to="\admin">
+              <NavLink to="/admin">
               <Button>ADMIN</Button>
               </NavLink>
               <NavLink to={"/singin"}>
