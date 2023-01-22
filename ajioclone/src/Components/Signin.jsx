@@ -12,6 +12,8 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
+
+  import { NavLink } from 'react-router-dom';
   
   export default function Signin() {
     return (
@@ -49,7 +51,7 @@ import {
                   <Checkbox>Remember me</Checkbox>
                   <Link color={'blue.400'}>Forgot password?</Link>
                 </Stack>
-
+                <NavLink to ="/">
                 <Button
                   bg={'blue.400'}
                   color={'white'}
@@ -60,6 +62,7 @@ import {
                   >
                   Sign in
                 </Button>
+                </NavLink>
                 
               </Stack>
             </Stack>
