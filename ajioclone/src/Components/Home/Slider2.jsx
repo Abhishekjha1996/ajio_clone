@@ -11,8 +11,8 @@ const Slider2 = () => {
 
     React.useEffect(() => {
         setInterval(() => {
-            setImage(sImage => sImage <= 2 ? sImage + 1 : 0)
-            set5Image(s5Image => s5Image <= 4 ? s5Image + 1 : 0)
+            setImage(sImage => sImage < 2 ? sImage + 1 : 0)
+            set5Image(s5Image => s5Image < 4 ? s5Image + 1 : 0)
             
          },2000)
 

@@ -36,7 +36,7 @@ const Carosole = () => {
         <div><img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sneakers.jpg" alt="d" /></div>
         <div><img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sunglasses.jpg" alt="s" /></div>
         <div><img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-formalshoes.jpg" alt="s" /></div>
-      </Carousel>;
+      </Carousel>
       </div>
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-hiddengems-header.jpg" alt="dfds" />
@@ -44,14 +44,14 @@ const Carosole = () => {
       <div>
       <Carousel responsive={responsive}
          >
-        <div> <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sportsshoes.jpg" alt="fr" />        </div>
+        <div> <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sportsshoes.jpg" alt="fr" /></div>
         <div> <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-watches.jpg" alt="f" /> </div>
         <div> <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sandals.jpg" alt="s" /> </div>
         <div> <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-home.jpg" alt="s" /> </div>
         <div><img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sneakers.jpg" alt="d" /></div>
         <div><img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-sunglasses.jpg" alt="s" /></div>
         <div><img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-formalshoes.jpg" alt="s" /></div>
-      </Carousel>;
+      </Carousel>
 
       </div>
 

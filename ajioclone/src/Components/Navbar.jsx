@@ -1,5 +1,6 @@
 import React from 'react';
 import UrbanCreator from "../Picture/UrbanCreator.jpg"
+import {  NavLink } from "react-router-dom";
 
 import {
     Box,
@@ -62,30 +63,33 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+            <NavLink to="/">
             
             <Image
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               width="100px"
               src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="name"
               />
-              
+            </NavLink>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+
               <DesktopNav />
+
             </Flex>
             <Flex>
             <Stack spacing={4}> 
-            <Box>
-                red
-            </Box>
+            {/* <Box border="1px solid red">
+               
+            </Box> */}
     <InputGroup>
     <InputLeftElement
       pointerEvents='none'
       color='gray.300'
       fontSize='1.2em'
     />
-    <Input placeholder='Search Products' />
-    <InputRightElement children={<SearchIcon color='green.500' />} />
+    <Input placeholder='Search Products' w="350px" />
+    <InputRightElement  children={<SearchIcon color='green.500' />} />
   </InputGroup>
 </Stack>
             </Flex>
@@ -96,14 +100,22 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
+              <NavLink to={"/singin"}>
             <Button
-              as={'a'}
-              fontSize={'sm'}
-              fontWeight={400}
-              variant={'link'}
-              href={'#'}>
+               display={{ base: 'none', md: 'inline-flex' }}
+               fontSize={'sm'}
+               fontWeight={600}
+               color={'white'}
+               bg={'pink.400'}
+               href={'#'}
+               _hover={{
+                 bg: 'pink.300',
+               }}>
               Sign In
             </Button>
+
+            </NavLink>
+            <NavLink to={"/singup"}>
             <Button
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
@@ -116,6 +128,7 @@ import {
               }}>
               Sign Up
             </Button>
+            </NavLink>
           </Stack>
         </Flex>
   
@@ -186,12 +199,14 @@ import {
         _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
         <SimpleGrid direction={[ 2, 3]} align={'center'}>
           <Box>
+            <NavLink to={"/men"}>
             <Text
               transition={'all .3s ease'}
               _groupHover={{ color: 'pink.400' }}
               fontWeight={500}>
               {label}
             </Text>
+            </NavLink>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
           <Flex
@@ -281,25 +296,25 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
+      label: 'MEN',
       children: [
         {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          href: '#',
+          label: 'MEN SHIRT',
+          subLabel: 'Trending Design for Men',
+          href: '',
         },
         {
-            label: 'Explore Design Work',
+            label: 'MEN TSHIRT',
             subLabel: 'Trending Design to inspire you',
             href: '#',
           },
           {
-            label: 'Explore Design Work',
+            label: 'MEN PANTS',
             subLabel: 'Trending Design to inspire you',
             href: '#',
           },
           {
-            label: 'Explore Design Work',
+            label: 'MEN JEANS',
             subLabel: 'Trending Design to inspire you',
             href: '#',
           },
@@ -336,7 +351,7 @@ import {
       ],
     },
     {
-        label: 'Inspiration',
+        label: 'WOMEN',
         children: [
           {
             label: 'Explore Design Work',
@@ -351,7 +366,7 @@ import {
         ],
       },
       {
-        label: 'Inspiration',
+        label: 'KIDS',
         children: [
           {
             label: 'Explore Design Work',
@@ -366,7 +381,7 @@ import {
         ],
       },
     {
-      label: 'Find Work',
+      label: 'INDIE',
       children: [
         {
           label: 'Job Board',
@@ -381,11 +396,7 @@ import {
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
-    },
-    {
-      label: 'Hire Designers',
+      label: 'HOME & KITCHEN',
       href: '#',
     },
   ];
