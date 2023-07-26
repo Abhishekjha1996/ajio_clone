@@ -9,7 +9,7 @@ const [data, setdata] = React.useState([])
 const [val, setval] = useState("asc");
 
 const getdata = () => {
-  return axios.get(`http://localhost:3001/productsmen?_sort=price&_order=${val}`)
+  return axios.get(`https://ajioclonebackend.onrender.com/productsmen?_sort=price&_order=${val}`)
   .then((res) => setdata(res.data));
 
 };
