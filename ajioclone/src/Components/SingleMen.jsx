@@ -7,7 +7,7 @@ const SingleMen = () => {
   const [userDetails, setUserDetails] = useState({});
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/productsmen/${id}`)
+    axios.get(`https://ajioclonebackend.onrender.com/productsmen/${id}`)
       .then((res) => setUserDetails(res.data))
       .catch((err) => console.log(err));
   }, [id]);
